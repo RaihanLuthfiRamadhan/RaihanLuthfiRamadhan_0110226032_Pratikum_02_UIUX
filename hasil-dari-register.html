@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Hasil Register Karang Taruna</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 25px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: auto;
+            border: 2px solid #555;
+            padding: 25px;
+        }
+
+        .content {
+            display: flex;
+            gap: 25px;
+            align-items: flex-start;
+        }
+
+        .photo {
+            width: 170px;
+            flex-shrink: 0;
+        }
+
+        .photo-box {
+            width: 165px;
+            height: 165px;
+            border: 2px solid #555;
+            object-fit: cover;
+        }
+
+        .form-area {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 120px 1fr;
+            gap: 10px;
+            align-items: start;
+            margin-bottom: 12px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea,
+        select {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 7px;
+            border: 2px solid #777;
+            border-radius: 3px;
+        }
+
+        textarea {
+            height: 90px;
+            resize: vertical;
+        }
+
+        .checks {
+            margin-left: 130px;
+            margin-bottom: 18px;
+        }
+
+        .checks label {
+            display: block;
+            margin: 7px 0;
+            color: green;
+        }
+
+        button {
+            cursor: pointer;
+            padding: 9px 16px;
+        }
+
+        .generate {
+            display: block;
+            margin: 25px auto 0;
+            background-color: green;
+            color: white;
+            border: 2px solid darkgreen;
+            border-radius: 4px;
+        }
+
+        @media (max-width: 600px) {
+            .content {
+                flex-direction: column;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .checks {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset class="container">
+      <h3 style="text-align:center;font-weight:bold;padding:5px;border-bottom:1px solid #aaa;">TERIMA KASIH TELAH MENDAFTAR</h3>
+      <fieldset style="margin:18px auto 20px;width:82%;display:flex;justify-content:space-around;align-items:center;flex-wrap:wrap;gap:5px;border:1px">
+      <fieldset><a href="Home-KarangTaruna.html" style="color:#222;text-decoration:none;">Home</a></fieldset>
+      <p>|</p>
+      <fieldset><a href="Register-KarangTaruna.html" style="color:#222;text-decoration:none;">Register</a></fieldset>
+      <p>|</p>
+      <fieldset><a href="User-KarangTaruna.html" style="color:#222;text-decoration:none;">User History</a></fieldset>
+      <p>|</p>
+      <fieldset><a href="Policy.html" style="color:#222;text-decoration:none;">Policy</a></fieldset>
+      <p>|</p>
+      <fieldset><a href="login.html" style="color:#222;text-decoration:none;">Logout</a></fieldset>
+    </fieldset>
+
+  <section>
+      <fieldset class="content">
+        <div class="photo">
+            <img class="photo-box" id="result-picture" alt="Foto pendaftar">
+            <br>
+            <label>
+                <span>Foto pendaftar</span>
+            </label>
+        </div>
+
+        <div class="form-area">
+            <div class="form-row">
+                <label><span>Name:</span></label>
+                <span id="result-name">—</span>
+            </div>
+
+            <div class="form-row">
+                <label><span>Address:</span></label>
+                <span id="result-address">—</span>
+            </div>
+
+            <div class="form-row">
+                <label><span>Tempat, Tanggal Lahir:</span></label>
+                <span id="result-birthplace-date">—</span>
+            </div>
+
+            <div class="form-row">
+                <label><span>Tanggal Lahir:</span></label>
+                <span id="result-birth-date">—</span>
+            </div>
+
+            <div class="form-row">
+                <label><span>Number Phone:</span></label>
+                <span id="result-phone">—</span>
+            </div>
+
+            <div class="form-row">
+                <label><span>Gender:</span></label>
+                <span id="result-gender">—</span>
+            </div>
+
+            <div class="form-row">
+                <label><span>Religion:</span></label>
+                <span id="result-religion">—</span>
+            </div>
+
+            <div class="form-row">
+                <label><span>Pekerjaan:</span></label>
+                <span id="result-job">—</span>
+            </div>    
+
+            <div class="checks">
+                <h4>Siap Bergabung kedalam Karang Taruna</h4>
+                <span id="result-membership">—</span>
+            </div>
+        </div>
+      </fieldset>
+  </section>
+</body>
+</html>

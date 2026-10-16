@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organisasi Masyarakat</title>
+</head>
+<body style="margin:0;font-family:Arial,Helvetica,sans-serif;color:#222;font-size:12px;">
+  <main style="width:min(760px,96%);margin:24px auto;border:1px solid #888;box-shadow:0 1px 3px #bbb;">
+    <h3 style="text-align:center;font-weight:bold;padding:5px;border-bottom:1px solid #aaa;">SELAMAT DATANG DI KARANG TARUNA</h3>
+    <fieldset style="margin:18px auto 20px;width:82%;display:flex;justify-content:space-around;align-items:center;flex-wrap:wrap;gap:5px;border:1px">
+      <fieldset><a href="Home-KarangTaruna.html" style="color:#222;text-decoration:none;">Home</a></fieldset>
+      <p>|</p>
+      <fieldset><a href="Register-KarangTaruna.html" style="color:#222;text-decoration:none;">Register</a></fieldset>
+      <p>|</p>
+      <fieldset><a href="User-KarangTaruna.html" style="color:#222;text-decoration:none;">User History</a></fieldset>
+      <p>|</p>
+      <fieldset><a href="Policy.html" style="color:#222;text-decoration:none;">Policy</a></fieldset>
+      <p>|</p>
+      <fieldset><a href="login.html" style="color:#222;text-decoration:none;">Logout</a></fieldset>
+    </fieldset>
+
+   <form id="registration-form" action="hasil-dari-register.html" method="get" style="padding:0 5% 28px;">
+      <fieldset>
+        <p style="display:flex;align-items:flex-start;gap:22px;">
+          <h3 style="text-align:center;font-weight:bold;padding:5px;border-bottom:1px solid #aaa;" >Biodata Pendaftaran</h3>
+          <div style="width:125px;flex:0 0 125px;">
+            <div style="width:100%;aspect-ratio:1/1;border:2px solid #999;background:#fafafa;position:relative;box-sizing:border-box;">
+              <div style="position:absolute;inset:0;background:linear-gradient(to top right,transparent 49.4%,#999 49.8%,#999 50.2%,transparent 50.6%),linear-gradient(to bottom right,transparent 49.4%,#999 49.8%,#999 50.2%,transparent 50.6%);"></div>
+            </div>
+            <label for="picture" style="display:inline-block;margin-bottom:5px;border:1px solid #888;background:#eee;padding:3px 2px;font-size:10px;"><span>Upload Picture</span></label>
+            <input id="picture" name="picture" type="file" accept="image/*" style="display:none;">
+          </div>
+          <div style="flex:1;min-width:0;">
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:7px;">
+              <strong><label for="Name" style="width:120px;flex:0 0 120px;"><span>Name</span></label></strong><br>
+              <input id="Name" name="Name" value="" required style="box-sizing:border-box;width:250px;min-width:0;border:1px solid #888;padding:4px;font: size 12px;">
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:10px;margin-bottom:7px;">
+              <strong><label for="Home address" style="width:120px;flex:0 0 120px;padding-top:4px;"><span>Address</span></label></strong><br>
+              <textarea id="Home address" name="Home address" rows="5" style="box-sizing:border-box;width:100%;min-width:0;resize:vertical;border:1px solid #888;padding:4px;font-family:Arial;font-size:12px;"></textarea>
+            </div>
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:7px;">
+              <strong><label for="tempat,tanggal lahir" style="width:120px;flex:0 0 120px;"><span>Tempat,Tanggal Lahir</span></label></strong><br>
+              <input id="tempat,tanggal lahir" name="tempat,tanggal lahir" value="" required style="box-sizing:border-box;width:150px;min-width:0;border:1px solid #888;padding:4px;font-size:12px;">
+              <input id="birth-date" name="birth-date" type="date" required>
+            </div>
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:7px;">
+              <strong><label for="Number-Phone" style="width:120px;flex:0 0 120px;"><span>Number Phone</span></label></strong><br>
+              <input id="Number-Phone" name="Number-Phone" type="tel" required>
+            </div>
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:7px;">
+              <strong><label for="Gender" style="width:120px;flex:0 0 120px;"><span>Gender</span></label></strong><br>
+              <select id="Gender" name="Gender" required style="box-sizing:border-box;width:100%;min-width:0;border:1px solid #888;padding:3px;font-size:12px;">
+                <option value="" selected disabled>Choose Gender</option>
+                <option value="Laki-Laki">Laki-Laki</option>
+                <option value="Perempuan">Perempuan</option>
+              </select>
+            </div>
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:7px;">
+              <strong><label for="Religion" style="width:120px;flex:0 0 120px;"><span>Religion</span></label></strong><br>
+              <select id="Religion" name="Religion" required style="box-sizing:border-box;width:100%;min-width:0;border:1px solid #888;padding:3px;font-size:12px;">
+                <option value="" selected disabled>Choose Religion</option>
+                <option value="Islam">Islam</option>
+                <option value="Kristen">Kristen</option>
+                <option value="Katolik">Katolik</option>
+                <option value="Buddha">Buddha</option>
+                <option value="Konghucu">Konghucu</option>
+              </select>
+            </div>
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:7px;">
+              <strong><label for="Pekerjaan" style="width:120px;flex:0 0 120px;"><span>Pekerjaan<span></span></label></strong><br>
+              <select id="Pekerjaan" name="Pekerjaan" required style="box-sizing:border-box;width:100%;min-width:0;border:1px solid #888;padding:3px;font-size:12px;">
+                <option value="" selected disabled>Choose Pekerjaan</option>
+                <option value="SMP">SMP</option><option value="SMA">SMA</option>
+                <option value="Kuliah">Kuliah</option>
+                <option value="Bekerja">Bekerja</option>
+              </select>
+            </div>
+            <p style="margin-left:130px;margin-bottom:7px;">
+              <h4>Siap Bergabung kedalam Karang Taruna</h4>
+              <label style="display:block;margin:3px 0;">
+                <input type="radio" name="membership" value="Ya" checked><span>Ya</span></label>
+              <label style="display:block;margin:3px 0;">
+                <input type="radio" name="membership" value="Tidak"><span>Tidak</span></label>
+                <div style="margin:0 0 5px 2px;font-size:10px;color:#555;">*Pilih Satu JANGAN LEBIH!</div>
+            </p>     
+          </div>
+        </p>
+      </fieldset>
+      <fieldset>
+        <div style="text-align:center;margin-top:2px;">
+          <button type="submit" value="submit">SUBMIT</button>
+          <button type="reset" value="reset">RESET</button>
+        </div>
+      </fieldset>  
+    </form>
+  </main>
+</body>
+</html>
